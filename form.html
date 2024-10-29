@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="">
+    <h2 class="">Employee Survey Form</h2>
+
+    <!-- section d'information personnel -->
+    <div class="">
+        <h3>Personal Information</h3>
+        <form id="employeeForm">
+            <div class="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <button type="button">Next</button>
+        </form>
+    </div>
+
+    <!-- section de contact profissionel -->
+    <div class="" style="display: none;">
+        <h3>Professional Contact</h3>
+        <div class="">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <button type="button">Back</button>
+        <button type="button">Next</button>
+    </div>
+
+    <!-- feedback d'Experience de travail -->
+    <div class="" style="display: none;">
+        <h3>Work Experience Feedback</h3>
+        <div class="">
+            <label for="comments">Comments on Work Satisfaction</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+        <button type="button">Back</button>
+        <button type="submit">Submit</button>
+    </div>
+
+</div>
+
+</body>
+</html>
