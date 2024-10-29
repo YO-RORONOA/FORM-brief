@@ -8,11 +8,11 @@
 </head>
 <body>
 
-<div class="">
+<div class="container mt-5">
     <h2 class="">Employee Survey Form</h2>
 
     <!-- section d'information personnel -->
-    <div class="">
+    <div class="container ">
         <h3>Personal Information</h3>
         <form id="employeeForm">
             <div class="">
@@ -23,6 +23,22 @@
                 <label for="age">Age</label>
                 <input type="number" id="age" name="age">
             </div>
+            <div>
+                <label for="experience">Années d'expérience dans l'entreprise :</label>
+                <input type="number" id="experience" name="experience" min="0" placeholder="Ex. 5">
+            </div>
+            <fieldset>
+                <legend>Sexe :</legend>
+                
+                <label for="homme">
+                  <input type="radio" id="homme" name="sexe" value="homme">
+                  Homme
+                </label>
+                <label for="femme">
+                  <input type="radio" id="femme" name="sexe" value="femme">
+                  Femme
+                </label>
+            </fieldset>
             <button type="button">Next</button>
         </form>
     </div>
@@ -38,6 +54,17 @@
             <label for="phone">Phone Number</label>
             <input type="tel" id="phone" name="phone">
         </div>
+        <label for="poste-actuel">Poste actuel :</label>
+        <label for="poste-actuel">Poste actuel :</label>
+        <input type="text" id="poste-actuel" name="poste-actuel" placeholder="Ex. Ingénieur, Directeur">
+        <label for="departement">Département :</label>
+        <select id="departement" name="departement">
+            <option value="rh">Ressources Humaines</option>
+            <option value="informatique">Informatique</option>
+            <option value="marketing">Marketing</option>
+            <option value="finance">Finance</option>
+            <option value="autre">Autre</option>
+        </select>
         <button type="button">Back</button>
         <button type="button">Next</button>
     </div>
@@ -49,6 +76,29 @@
             <label for="comments">Comments on Work Satisfaction</label>
             <textarea id="comments" name="comments" rows="4"></textarea>
         </div>
+        <fieldset>
+            <legend>Comment évalueriez-vous votre satisfaction au travail ? (1 = Pas satisfait, 10 = Très satisfait)</legend>
+            <label><input type="radio" name="satisfaction" value="1"> 1</label>
+            <label><input type="radio" name="satisfaction" value="2"> 2</label>
+            <label><input type="radio" name="satisfaction" value="3"> 3</label>
+            <label><input type="radio" name="satisfaction" value="4"> 4</label>
+            <label><input type="radio" name="satisfaction" value="5"> 5</label>
+            <label><input type="radio" name="satisfaction" value="6"> 6</label>
+            <label><input type="radio" name="satisfaction" value="7"> 7</label>
+            <label><input type="radio" name="satisfaction" value="8"> 8</label>
+            <label><input type="radio" name="satisfaction" value="9"> 9</label>
+            <label><input type="radio" name="satisfaction" value="10"> 10</label>
+          </fieldset>
+          <fieldset>
+            <legend>Quels sont les aspects de votre travail que vous appréciez le plus ?</legend>
+            <label><input type="checkbox" name="aspects" value="autonomie"> Autonomie</label>
+            <label><input type="checkbox" name="aspects" value="travail_equipe"> Travail en équipe</label>
+            <label><input type="checkbox" name="aspects" value="salaire"> Salaire</label>
+            <label><input type="checkbox" name="aspects" value="environnement"> Environnement de travail</label>
+            <label><input type="checkbox" name="aspects" value="opportunites"> Opportunités de développement</label>
+            <label><input type="checkbox" name="aspects" value="autre"> Autre (précisez ci-dessous)</label>
+          </fieldset>
+          <input type="text" name="aspects_autre" placeholder="Précisions supplémentaires">
         <button type="button">Back</button>
         <button type="submit">Submit</button>
     </div>
