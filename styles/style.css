@@ -1,7 +1,23 @@
-/* .is-invalid {
-    border-color: red;
+body {
+    background-color: #f8f9fa; /* A light gray background color */
 }
 
-.is-valid {
-    border-color: green;
-} */
+.form-section {
+    padding: 20px; /* Add padding to the form sections */
+    border-radius: 8px; /* Rounded corners for form sections */
+}
+
+.btn {
+    width: 100%; /* Make buttons full width */
+    margin-top: 10px; /* Space above buttons */
+}
+
+.next-button {
+    background-color: #007bff; /* Bootstrap primary button color */
+    color: white; /* Button text color */
+}
+
+.back-button {
+    background-color: #6c757d; /* Bootstrap secondary button color */
+    color: white; /* Button text color */
+}
