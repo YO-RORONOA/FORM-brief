@@ -6,6 +6,7 @@
     <title>Employee Survey Form</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="scripts/scripts.js" defer></script>
+    <style src="styles/style.css"></style>
 </head>
 <body>
 
@@ -19,10 +20,12 @@
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" class="form-control" required>
+                <small class="form-text text-muted">Name must be at least 3 characters long.</small>
             </div>
             <div class="form-group">
                 <label for="age">Age</label>
-                <input type="number" id="age" class="form-control" name="age" required>
+                <input type="number" id="age" class="form-control" name="age" min="18" max="100" required>
+                <small class="form-text text-muted">Age must be between 18 and 100.</small>
             </div>
             <div class="form-group">
                 <label for="experience">Années d'expérience dans l'entreprise :</label>
